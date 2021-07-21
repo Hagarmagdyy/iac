@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Magalix
-      uses: magalixcorp/magalix-action@test
-      with:
-        webhook: ${{ secrets.GUARD_WEBHOOK }}
+    - run: echo ${{ github.event.pull_request.head.sha || github.sha }}
+#     - name: Magalix
+#       uses: magalixcorp/magalix-action@test
+#       with:
+#         webhook: ${{ secrets.GUARD_WEBHOOK }}
