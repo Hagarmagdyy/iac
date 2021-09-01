@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Magalix
-      uses: magalixcorp/magalix-action@test
+      uses: magalixcorp/magalix-action@main
       with:
         webhook: ${{ secrets.GUARD_WEBHOOK }}
-        auto-remediation: true
+        auto-remediation: false
