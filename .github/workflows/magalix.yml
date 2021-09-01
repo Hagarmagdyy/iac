@@ -15,4 +15,4 @@ jobs:
       uses: magalixcorp/magalix-action@main
       with:
         webhook: ${{ secrets.GUARD_WEBHOOK }}
-        auto-remediation: false
+        auto-remediation: true
