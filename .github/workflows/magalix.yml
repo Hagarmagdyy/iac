@@ -18,3 +18,4 @@ jobs:
         auto-remediation: true
     - name: echo results
       run: echo result.json
+      if: ${{ always() }}
