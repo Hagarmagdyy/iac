@@ -16,6 +16,3 @@ jobs:
       with:
         webhook: ${{ secrets.GUARD_WEBHOOK_ALL }}
         auto-remediation: true
-    - name: echo results
-      run: cat result.json
-      if: ${{ always() }}
