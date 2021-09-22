@@ -16,3 +16,4 @@ jobs:
       with:
         webhook: ${{ secrets.TEST_MAGALIX_GUARD }}
         auto-remediation: true
+
