@@ -14,6 +14,6 @@ jobs:
     - name: Magalix
       uses: magalixcorp/magalix-action@test
       with:
-        webhook: ${{ secrets.TEST_MAGALIX_GUARD }}
+        webhook: ${{ secrets.NEW_GUARD }}
         auto-remediation: true
 
