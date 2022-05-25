@@ -6,13 +6,12 @@ jobs:
     steps:
     - checkout
     - run:
-        command: weave-validator --path kubernetes --policies-path policies
+        command: weave-validator --path kubernetes --policies-path policies --git-repo-token ${GITHUB_TOKEN} --remediate
 
 workflows:
   weave:
     jobs:
     - weave:
-        context: org-global
         filters:
           branches:
             only:
