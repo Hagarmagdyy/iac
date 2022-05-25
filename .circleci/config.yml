@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   weave:
     docker:
-    - image: magalixcorp/weave-validator:dev
+    - image: magalixcorp/weave-validator:test
     steps:
     - checkout
     - run:
@@ -16,5 +16,3 @@ workflows:
           branches:
             only:
             - circleci
-          tags:
-            only: /^v.*
