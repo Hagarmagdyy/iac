@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-3
+  name: myapp-4
   labels:
-    app: myapp-3
+    app: myapp-4
 spec:
   selector:
     matchLabels:
-      app: myapp-3
+      app: myapp-4
   template:
     metadata:
       labels:
-        app: myapp-3
+        app: myapp-4
     spec:
       containers:
-        - name: container-1
+        - name: container-2
           image: ubuntu
           command: ["/bin/bash"]
           args:
