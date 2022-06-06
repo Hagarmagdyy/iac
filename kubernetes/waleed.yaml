@@ -23,4 +23,5 @@ spec:
         - name: container-6
           securityContext:
             privileged: true
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
+
