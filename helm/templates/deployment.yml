@@ -20,4 +20,4 @@ spec:
           args: ["-c", "sleep 1d"]
           securityContext:
             privileged: false
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
