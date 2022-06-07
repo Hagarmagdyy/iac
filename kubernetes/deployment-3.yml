@@ -23,7 +23,7 @@ spec:
         - name: container-3
           securityContext:
             privileged: true
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -44,7 +44,7 @@ spec:
         - name: container-1
           securityContext:
             privileged: true
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -71,5 +71,7 @@ spec:
         - name: container-3
           securityContext:
             privileged: true
-            allowPrivilegeEscalation: true
+            allowPrivilegeEscalation: false
 ---
+
+
